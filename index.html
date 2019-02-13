@@ -30,146 +30,146 @@
 
             var map, marker_me, marker_you;
 
-            var WUHAN = new google.maps.LatLng(30.511843, 114.45591),
-                PORTUGAL = new google.maps.LatLng(40.207312, -8.425645);
+            var WUHAN = new google.maps.LatLng(23.033378, 113.376244),
+                PORTUGAL = new google.maps.LatLng(40.721757, -111.776263);
 
-            var DEFAULT_CENTER = new google.maps.LatLng(29.075375, 60.46875),
-                HEART_ISLAND = new google.maps.LatLng(43.978549,15.383574);
+            // var DEFAULT_CENTER = new google.maps.LatLng(29.075375, 60.46875),
+            //     HEART_ISLAND = new google.maps.LatLng(43.978549,15.383574);
 
-            function smoothZoom(dest_zoom, callback){
-                callback = callback || function(){};
+            // function smoothZoom(dest_zoom, callback){
+            //     callback = callback || function(){};
 
-                var now_zoom = map.getZoom();
-                if(now_zoom == dest_zoom){
-                    callback();
-                }
-                var increm = now_zoom < dest_zoom ? 1:-1;
-                var timeout = setInterval(function(){
-                    now_zoom += increm;
-                    map.setZoom(now_zoom);
-                    if(now_zoom == dest_zoom){
-                        clearTimeout(timeout);
-                        setTimeout(function(){
-                            callback();
-                        }, 700);
-                    }
-                }, 800);
-            }
+            //     var now_zoom = map.getZoom();
+            //     if(now_zoom == dest_zoom){
+            //         callback();
+            //     }
+            //     var increm = now_zoom < dest_zoom ? 1:-1;
+            //     var timeout = setInterval(function(){
+            //         now_zoom += increm;
+            //         map.setZoom(now_zoom);
+            //         if(now_zoom == dest_zoom){
+            //             clearTimeout(timeout);
+            //             setTimeout(function(){
+            //                 callback();
+            //             }, 700);
+            //         }
+            //     }, 800);
+            // }
 
-            function loopInfoWindows(infowindows, interval, callback, keep_last){
-                var i = 0, len = infowindows.length;
-                var timeout = setInterval(function(){
-                    i > 0 && infowindows[i-1].close();
-                    infowindows[i].open(map);
-                    if(++i == len){
-                        clearInterval(timeout);
-                        !keep_last && infowindows[i-1].close();
-                        (callback || function(){})();
-                    }
-                }, interval || 1000); 
-            }
+            // function loopInfoWindows(infowindows, interval, callback, keep_last){
+            //     var i = 0, len = infowindows.length;
+            //     var timeout = setInterval(function(){
+            //         i > 0 && infowindows[i-1].close();
+            //         infowindows[i].open(map);
+            //         if(++i == len){
+            //             clearInterval(timeout);
+            //             !keep_last && infowindows[i-1].close();
+            //             (callback || function(){})();
+            //         }
+            //     }, interval || 1000); 
+            // }
 
-            window.theEnd = function(){
-                marker_you.setAnimation(google.maps.Animation.BOUNCE);
-                setTimeout(function(){
-                    $("#curtain").animate({
-                        height: $(window).height()
-                    }, 6000, function(){
-                        $("#end_text").fadeIn("slow");
-                    });
-                }, 3000);
-            }
+            // window.theEnd = function(){
+            //     marker_you.setAnimation(google.maps.Animation.BOUNCE);
+            //     setTimeout(function(){
+            //         $("#curtain").animate({
+            //             height: $(window).height()
+            //         }, 6000, function(){
+            //             $("#end_text").fadeIn("slow");
+            //         });
+            //     }, 3000);
+            // }
 
-            function willYouLoveMeForever(){
-                window.my_infowindow = new google.maps.InfoWindow({
-                    content: "I will love you forever, will you?",
-                    position: WUHAN
-                });
-                my_infowindow.open(map);
+            // function willYouLoveMeForever(){
+            //     window.my_infowindow = new google.maps.InfoWindow({
+            //         content: "I will love you forever, will you?",
+            //         position: WUHAN
+            //     });
+            //     my_infowindow.open(map);
 
-                window.your_infowindow = new google.maps.InfoWindow({
-                    content: '<select>' +
-                                '<option value="yes">Yes, I will.</option>' +
-                                '<option value="yes">Yes, I will.</option>' +
-                             '</select>' +
-                             '<input type="button" value="submit" ' +
-                             'onclick="my_infowindow.close();your_infowindow.close();theEnd();" />',
-                    position: PORTUGAL
-                });
-                setTimeout(function(){
-                    your_infowindow.open(map);
-                }, 1000);
-            } 
+            //     window.your_infowindow = new google.maps.InfoWindow({
+            //         content: '<select>' +
+            //                     '<option value="yes">Yes, I will.</option>' +
+            //                     '<option value="yes">Yes, I will.</option>' +
+            //                  '</select>' +
+            //                  '<input type="button" value="submit" ' +
+            //                  'onclick="my_infowindow.close();your_infowindow.close();theEnd();" />',
+            //         position: PORTUGAL
+            //     });
+            //     setTimeout(function(){
+            //         your_infowindow.open(map);
+            //     }, 1000);
+            // } 
 
-            function showILoveYous(){
-                var i_love_you_s = [
+            // function showILoveYous(){
+            //     var i_love_you_s = [
 
-                ];
-                var infowindows = [];
-                $.each(i_love_you_s, function(i, i_love_you){
-                    var point = i_love_you.point.split(",");
-                    var infowindow = new google.maps.InfoWindow({
-                        content: "<b>" + i_love_you.text + "</b>",
-                        position: new google.maps.LatLng(point[0], point[1])
-                    });
-                    infowindows.push(infowindow);
-                });
+            //     ];
+            //     var infowindows = [];
+            //     $.each(i_love_you_s, function(i, i_love_you){
+            //         var point = i_love_you.point.split(",");
+            //         var infowindow = new google.maps.InfoWindow({
+            //             content: "<b>" + i_love_you.text + "</b>",
+            //             position: new google.maps.LatLng(point[0], point[1])
+            //         });
+            //         infowindows.push(infowindow);
+            //     });
 
-                loopInfoWindows(infowindows, 2000, function(){
-                    map.panTo(DEFAULT_CENTER);
-                    setTimeout(function(){
-                        willYouLoveMeForever();
-                    }, 1000);
-                });
+            //     loopInfoWindows(infowindows, 2000, function(){
+            //         map.panTo(DEFAULT_CENTER);
+            //         setTimeout(function(){
+            //             willYouLoveMeForever();
+            //         }, 1000);
+            //     });
 
-            }
+            // }
 
-            function showPhotos(){
-                var PHOTO_BASE = "photos/";
-                var photos = [
-                    { point: "43.97855, 15.38354", src: PHOTO_BASE + "you1.jpg" },
-                    { point: "43.97844, 15.38459", src: PHOTO_BASE + "you2.jpg" },
-                    { point: "43.97847, 15.38215", src: PHOTO_BASE + "you3.jpg" },
-                    { point: "43.97907, 15.38198", src: PHOTO_BASE + "you4.jpg" },
-                    { point: "43.97957, 15.38472", src: PHOTO_BASE + "you5.jpg" },
-                    { point: "43.98028, 15.38552", src: PHOTO_BASE + "you6.jpg" },
-                    { point: "43.97932, 15.38112", src: PHOTO_BASE + "me1.jpg" },
-                    { point: "43.97694, 15.38354", src: PHOTO_BASE + "you7.jpg" },
-                    { point: "43.97819, 15.38485", src: PHOTO_BASE + "you8.jpg" },
-                    { point: "43.97861, 15.38178", src: PHOTO_BASE + "you9.jpg" },
-                    { point: "43.97788, 15.38363", src: PHOTO_BASE + "you10.jpg" },
-                    { point: "43.97836, 15.38496", src: PHOTO_BASE + "me2.jpg" },
-                    { point: "43.97952, 15.38545", src: PHOTO_BASE + "you11.jpg" },
-                    { point: "43.97850, 15.38288", src: PHOTO_BASE + "you12.jpg" },
-                    { point: "43.97768, 15.38373", src: PHOTO_BASE + "you13.jpg" }
-                ];
-                var infowindows = [];
-                $.each(photos, function(i, photo){
-                    var point = photo.point.split(",");
-                    var infowindow = new google.maps.InfoWindow({
-                        content: "<img src='" + photo.src + "' style='width:400px;height:300px;' />",
-                        position: new google.maps.LatLng(point[0], point[1])
-                    });
-                    infowindows.push(infowindow);
-                });
-                loopInfoWindows(infowindows, 2000, function(){
-                    map.panTo(HEART_ISLAND);
-                    smoothZoom(3, function(){
-                        map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
-                        map.panTo(DEFAULT_CENTER);
-                        showILoveYous();
-                    });
-                });
+            // function showPhotos(){
+            //     var PHOTO_BASE = "photos/";
+            //     var photos = [
+            //         { point: "43.97855, 15.38354", src: PHOTO_BASE + "you1.jpg" },
+            //         { point: "43.97844, 15.38459", src: PHOTO_BASE + "you2.jpg" },
+            //         { point: "43.97847, 15.38215", src: PHOTO_BASE + "you3.jpg" },
+            //         { point: "43.97907, 15.38198", src: PHOTO_BASE + "you4.jpg" },
+            //         { point: "43.97957, 15.38472", src: PHOTO_BASE + "you5.jpg" },
+            //         { point: "43.98028, 15.38552", src: PHOTO_BASE + "you6.jpg" },
+            //         { point: "43.97932, 15.38112", src: PHOTO_BASE + "me1.jpg" },
+            //         { point: "43.97694, 15.38354", src: PHOTO_BASE + "you7.jpg" },
+            //         { point: "43.97819, 15.38485", src: PHOTO_BASE + "you8.jpg" },
+            //         { point: "43.97861, 15.38178", src: PHOTO_BASE + "you9.jpg" },
+            //         { point: "43.97788, 15.38363", src: PHOTO_BASE + "you10.jpg" },
+            //         { point: "43.97836, 15.38496", src: PHOTO_BASE + "me2.jpg" },
+            //         { point: "43.97952, 15.38545", src: PHOTO_BASE + "you11.jpg" },
+            //         { point: "43.97850, 15.38288", src: PHOTO_BASE + "you12.jpg" },
+            //         { point: "43.97768, 15.38373", src: PHOTO_BASE + "you13.jpg" }
+            //     ];
+            //     var infowindows = [];
+            //     $.each(photos, function(i, photo){
+            //         var point = photo.point.split(",");
+            //         var infowindow = new google.maps.InfoWindow({
+            //             content: "<img src='" + photo.src + "' style='width:400px;height:300px;' />",
+            //             position: new google.maps.LatLng(point[0], point[1])
+            //         });
+            //         infowindows.push(infowindow);
+            //     });
+            //     loopInfoWindows(infowindows, 2000, function(){
+            //         map.panTo(HEART_ISLAND);
+            //         smoothZoom(3, function(){
+            //             map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
+            //             map.panTo(DEFAULT_CENTER);
+            //             showILoveYous();
+            //         });
+            //     });
 
-            }
+            // }
 
-            function showHeartIsland(){
-                map.panTo(HEART_ISLAND);
-                smoothZoom(16, function(){
-                    map.setMapTypeId(google.maps.MapTypeId.SATELLITE);
-                    setTimeout(function(){showPhotos()}, 2000);
-                });
-            }
+            // function showHeartIsland(){
+            //     map.panTo(HEART_ISLAND);
+            //     smoothZoom(16, function(){
+            //         map.setMapTypeId(google.maps.MapTypeId.SATELLITE);
+            //         setTimeout(function(){showPhotos()}, 2000);
+            //     });
+            // }
 
             function init() {
                 // play the background music
