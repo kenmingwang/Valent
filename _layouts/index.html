@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " zh-CN " }}">
+{% include head.html %}
+
+<body>
+    {% include navbar.html %}
+    <div class="navPusher">
+        <div>
+            <script src="/static/landing.js"></script>
+            <div class="homeContainer">
+                <div class="homeSplashFade">
+                    <div class="wrapper homeWrapper">
+                        <div class="inner">
+                            <img src="/static/images/PS_LOGO.png" width="40%">
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <img src="/static/MAN_RUNNING.png" width="10%">
+                            <h2 class="projectTitle">
+                                <small style="color: coral; -webkit-text-stroke: 0.5px #ffffff;">{{ site.data.i18n.tag_line }}</small>
+                            </h2>
+                            <div class="section promoSection">
+                                <div class="promoRow">
+                                    <div class="pluginRowBlock">
+                                        <div class="pluginWrapper buttonWrapper">
+                                            <a class="button" href="" target="_self">
+                                                😄 {{ site.data.i18n.build }} (Windows)
+                                            </a>
+                                            <a class="button" href="" target="_self">
+                                                😂 {{ site.data.i18n.build }} (MacOS)
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section promoSection">
+                                <div class="promoRow">
+                                    <div class="pluginRowBlock">
+                                        <div class="pluginWrapper buttonWrapper">
+                                            <a class="button" href="" target="_self">
+                                                ❕ Survey Link!!
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainContainer">
+                <div class="productShowcaseSection lightBackground">
+                    <div style="margin: 0 auto; text-align: center;">
+                        <iframe style="border-radius: 5px; -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+                        box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);" width="560" height="315" src="https://www.youtube.com/embed/CA7qYlWffNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        
+                    </div>
+                    <div style="max-width: 43%; text-align: center; margin: 0 auto; padding-top: 20px;">
+                        <h4 style="color: #5f5f52;">
+                            A Brand New Gaming Experience
+                        </h4>
+                    </div>
+                </div>
+                <div class="productShowcaseSection">
+                    <div style="margin: 0 auto; text-align: center;">
+                        <img src="/static/images/Capture2.PNG" width="580" style="border-radius: 5px; -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+                                box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);" />
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                        <img src="/static/images/Capture8.PNG" width="580" style="border-radius: 5px; -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+                                box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);" />
+                    </div>
+                    <div style="max-width: 43%; text-align: center; margin: 0 auto; padding-top: 20px;">
+                        <h4 style="color: #f7f7f1;">
+                            Get in the world of Anxiety!
+                        </h4>
+                    </div>
+                </div>
+                <div class="tldrSection productShowcaseSection lightBackground">
+                    <div class="container">
+                        <div class="wrapper">
+
+
+                            <div style="display:flex;flex-flow:row wrap;justify-content:space-evenly;">
+                                <div style="display:flex;flex-direction:column;">
+                                    <h2>What is Social Anxiety?</h2>
+                                    <ul style="flex:1;">
+                                        {% for item in site.data.home.left %}
+                                        <li>{{ site.data.i18n.home_left[item] }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                <div style="display:flex;flex-direction:column;">
+                                    <h2>Why do We Build Such Game?</h2>
+                                    <ul style="flex:1;">
+                                        {% for item in site.data.home.right %}
+                                        <li>{{ site.data.i18n.home_right[item] }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="editorSupportSection productShowcaseSection">
+                    <div class="container">
+                        <div class="wrapper">
+                            <h2>{{ site.data.i18n.tool-support}}</h2>
+                            <div style="display:flex;flex-flow:row wrap;justify-content:space-around;">
+                                <div class="editor">
+                                    <img class="editorImage" src="https://img.icons8.com/ios/100/000000/unity.png">
+                                    <div class="editorInfo">
+                                        <h3 style="margin-bottom:-16px;">Unity3D</h3>
+                                        <div>
+                                            <span>
+                                                <p>
+                                                    <a href="http://subchen.github.io/jetbrick-template/2x/overview.html">
+                                                        <code>{{ site.data.i18n.unity-engine }}</code>
+                                                    </a>
+                                                </p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="editor">
+                                    <img class="editorImage" src="https://img.icons8.com/color/100/000000/autodesk-maya.png">
+                                    <div class="editorInfo">
+                                        <h3 style="margin-bottom:-16px;">AutoDesk Maya</h3>
+                                        <div>
+                                            <span>
+                                                <p>
+                                                    <a href="https://github.com/biezhi/anima">
+                                                        <code>{{ site.data.i18n.maya }}</code>
+                                                    </a>
+                                                </p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div style="float:right;">
+                        <span>Got more? </span>
+                        <a href="https://github.com/lets-blade/blade/pulls" class="button"> Send a PR </a>
+                    </div> -->
+                </div>
+                <div class="getStartedSection productShowcaseSection lightBackground">
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="getStartedFlexContainer" style="display:flex;flex-flow:row;align-items:baseline;justify-content:space-between;">
+                                <div class="getStartedSteps">
+                                    <h2>{{ site.data.i18n.about-us }}</h2>
+                                    <ol>
+                                        <li>
+                                            <div class="mavenOnly">
+                                                <div>
+ 
+                                                </div>
+                                            </div>
+                                            <div class="gradleOnly">
+                                                <div>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="mavenOnly">
+                                                <div>
+ 
+                                                </div>
+                                            </div>
+                                            <div class="gradleOnly">
+                                                <div>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div style="display:flex;flex-direction:column;align-items:flex-end;flex-grow:1;margin-left:-75px;">
+                                    <div class="buttonGroup buttonWrapper">
+                                        <a class="button active showMavenButton" href="javascript:void(0)">Producers</a>
+                                        <a class="button showArtistsButton" href="javascript:void(0)">Artists</a>
+                                        <a class="button showDesignerButton" href="javascript:void(0)">Designers</a>
+                                        <a class="button showProgrammersButton" href="javascript:void(0)">Programmers</a>
+                                    </div>
+                                    <img class="decorativeRects" style="margin-top:32px;" src="/static/images/get_started_rects.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include footer.html %}
+    </div>
+</body>
+
+</html>

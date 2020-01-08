@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang=" zh-CN ">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Personal Space Game</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/static/icon.png">
+    <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5e158f966719b70012374cbf&product=inline-follow-buttons" async="async"></script>
+    <script type="text/javascript">
+        hljs.initHighlightingOnLoad();
+    </script>
+</head>
+
+<body class="sideNavVisible">
+  <div class="fixedHeaderContainer">
+  <div class="headerWrapper wrapper">
+    <header>
+      <a href="/">
+        <img class="logo" src="/static/icon.png">
+        <h2 class="headerTitle">Personal Space</h2>
+      </a>
+      <div class="navigationWrapper navigationSlider">
+        <nav class="slidingNav">
+          <ul class="nav-site nav-site-internal">
+            <li>
+              <a href="" target="">
+                Common Issues
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+</div>
+  <div class="navPusher">
+    <div class="docMainWrapper wrapper">
+      <div class="container docsNavContainer" id="docsNav">
+        <nav class="toc">
+          <div class="toggleNav">
+            <section class="navWrapper wrapper">
+              <div class="navBreadcrumb wrapper">
+                <div class="navToggle" id="navToggler">
+                  <i></i>
+                </div>
+                <h2>
+                  <i>›</i>
+                  <span>配置文件</span>
+                </h2>
+              </div>
+              <div class="navGroups">
+
+                
+
+                
+                <div class="navGroup navGroupActive">
+                  <h3>介绍</h3>
+                  <ul>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="why-blade.html">为什么是 Blade ?</a>
+                    </li>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="blade-design.html">Blade 设计</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                
+                <div class="navGroup navGroupActive">
+                  <h3>快速入门</h3>
+                  <ul>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="create-application.html">创建一个工程</a>
+                    </li>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="create-route.html">创建路由</a>
+                    </li>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="add-static-file.html">添加静态文件</a>
+                    </li>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="render-view.html">渲染视图</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                
+                <div class="navGroup navGroupActive">
+                  <h3>指南</h3>
+                  <ul>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="installation.html">安装 Blade</a>
+                    </li>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="component.html">组件托管</a>
+                    </li>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="route.html">路由注册</a>
+                    </li>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="route-context.html">路由上下文</a>
+                    </li>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="request.html">HTTP 请求</a>
+                    </li>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="response.html">HTTP 响应</a>
+                    </li>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="webhook.html">WebHook</a>
+                    </li>
+                    
+                    <li class="navListItem navItemActive">
+                      <a class="navItem navItemActive" href="configuration.html">配置文件</a>
+                    </li>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="templates.html">模板视图</a>
+                    </li>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="logging.html">日志输出</a>
+                    </li>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="package-deploy.html">打包部署</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                
+                <div class="navGroup navGroupActive">
+                  <h3>进阶</h3>
+                  <ul>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="exception.html">异常处理</a>
+                    </li>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="schedule.html">定时任务</a>
+                    </li>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="error-page.html">错误页面</a>
+                    </li>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="listen-event.html">监听事件</a>
+                    </li>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="session-ext.html">Session 扩展</a>
+                    </li>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="custom-middleware.html">自定义中间件</a>
+                    </li>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="cli-args.html">命令行参数</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                
+              </div>
+            </section>
+          </div>
+          <script>
+            var toggler = document.getElementById('navToggler');
+            var nav = document.getElementById('docsNav');
+            toggler.onclick = function () {
+              nav.classList.toggle('docsSliderActive');
+            };
+          </script>
+        </nav>
+      </div>
+      <div class="container mainContainer">
+        <div class="wrapper">
+          <div class="post">
+            <header class="postHeader">
+              <a class="edit-page-link button" href="https://github.com/lets-blade/lets-blade.github.io/edit/master/docs/configuration.md"
+                target="_blank">
+                编辑该页
+              </a>
+              <h1>配置文件</h1>
+            </header>
+            <article>
+              <div>
+                <p>
+                  <p>在 Web 开发中配置是一个非常常用的功能，笔者认为没有绝对的零配置，即便是编码也属于配置，
+而且编码写入的配置在Java语言中需要重新编码才可修改，而生产环境中去修改代码是很麻烦的一件事。</p>
+
+<p>Blade中配置的概念更加简化，当然即便你不使用配置文件也可以完全保证你的项目正常运行，
+但开发程序落地到每位工程师手上就像是魔法一样，保不齐谁会有大胆的想法，我们满足你。</p>
+
+<h2 id="创建配置文件">创建配置文件</h2>
+
+<p>我们约定在先，创建的配置文件名为 <code class="highlighter-rouge">application.properties</code>，位于 <code class="highlighter-rouge">classpath</code> 之下。</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>app.name<span class="o">=</span>我可爱的程序
+app.version<span class="o">=</span>0.0.1
+jdbc.url<span class="o">=</span>jdbc:mysql://127.0.0.1:3306/app
+jdbc.username<span class="o">=</span>root
+jdbc.password<span class="o">=</span>123456
+com.blade.logger.dir<span class="o">=</span>./logs
+</code></pre></div></div>
+
+<p>这是一份简单的，常见的配置，在这份配置文件中我们指定了程序的名称、版本，JDBC的配置，和日志文件的存储位置。</p>
+
+<h2 id="获取配置">获取配置</h2>
+
+<p>有些时候我们需要在程序中获取配置，比如我需要将 <code class="highlighter-rouge">app.version</code> 中的版本号展示在网页上，
+那么只需要在路由执行的时候或者启动的时候获取配置，然后存储在 <code class="highlighter-rouge">Request#attribute</code> 中即可。</p>
+
+<p><strong>启动时获取配置</strong></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Blade</span><span class="o">.</span><span class="na">of</span><span class="o">()</span>
+     <span class="o">.</span><span class="na">on</span><span class="o">(</span><span class="n">EventType</span><span class="o">.</span><span class="na">SERVER_STARTED</span><span class="o">,</span> <span class="n">e</span> <span class="o">-&gt;</span> <span class="o">{</span>
+        <span class="n">String</span> <span class="n">version</span> <span class="o">=</span> <span class="n">WebContext</span><span class="o">.</span><span class="na">blade</span><span class="o">().</span><span class="na">env</span><span class="o">(</span><span class="s">"app.version"</span><span class="o">,</span> <span class="s">"0.0.1"</span><span class="o">);</span>
+        <span class="c1">// 然后将 version 变量存储到一个常量字段中以便长期使用</span>
+     <span class="o">});</span>
+</code></pre></div></div>
+
+<p><strong>路由执行时获取</strong></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kt">void</span> <span class="nf">someRoute</span><span class="o">(){</span>
+    <span class="n">String</span> <span class="n">version</span> <span class="o">=</span> <span class="n">WebContext</span><span class="o">.</span><span class="na">blade</span><span class="o">().</span><span class="na">env</span><span class="o">(</span><span class="s">"app.version"</span><span class="o">,</span> <span class="s">"0.0.1"</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>上面的写法比较粗暴，有时候我们更习惯在加载模板引擎配置或者数据库配置的时候来做，
+下面举个例子，我将数据库配置和模板配置一起加载，编写一个实现了 <code class="highlighter-rouge">BladeLoader</code> 接口的配置类。</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Bean</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">LoadConfig</span> <span class="kd">implements</span> <span class="n">BladeLoader</span> <span class="o">{</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">load</span><span class="o">(</span><span class="n">Blade</span> <span class="n">blade</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">String</span> <span class="n">version</span> <span class="o">=</span> <span class="n">blade</span><span class="o">.</span><span class="na">env</span><span class="o">(</span><span class="s">"app.version"</span><span class="o">,</span> <span class="s">"0.0.1"</span><span class="o">);</span>
+
+        <span class="c1">// 配置数据库</span>
+        <span class="n">DruidDataSource</span> <span class="n">dataSource</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DruidDataSource</span><span class="o">();</span>
+
+        <span class="n">dataSource</span><span class="o">.</span><span class="na">setDriverClassName</span><span class="o">(</span><span class="s">"jdbc.driver"</span><span class="o">);</span>
+        <span class="n">dataSource</span><span class="o">.</span><span class="na">setUrl</span><span class="o">(</span><span class="s">"jdbc.url"</span><span class="o">);</span>
+        <span class="n">dataSource</span><span class="o">.</span><span class="na">setUsername</span><span class="o">(</span><span class="s">"jdbc.username"</span><span class="o">);</span>
+        <span class="n">dataSource</span><span class="o">.</span><span class="na">setPassword</span><span class="o">(</span><span class="s">"jdbc.password"</span><span class="o">);</span>
+
+        <span class="n">dataSource</span><span class="o">.</span><span class="na">setInitialSize</span><span class="o">(</span><span class="mi">5</span><span class="o">);</span>
+        <span class="n">dataSource</span><span class="o">.</span><span class="na">setMaxActive</span><span class="o">(</span><span class="mi">5</span><span class="o">);</span>
+        <span class="n">dataSource</span><span class="o">.</span><span class="na">setMinIdle</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>
+        <span class="n">dataSource</span><span class="o">.</span><span class="na">setMaxWait</span><span class="o">(</span><span class="mi">6000</span><span class="o">);</span>
+
+        <span class="n">Anima</span><span class="o">.</span><span class="na">open</span><span class="o">(</span><span class="n">dataSource</span><span class="o">);</span>
+
+        <span class="c1">// 配置模板引擎</span>
+        <span class="n">JetbrickTemplateEngine</span> <span class="n">templateEngine</span> <span class="o">=</span> <span class="k">new</span> <span class="n">JetbrickTemplateEngine</span><span class="o">();</span>
+        <span class="n">templateEngine</span><span class="o">.</span><span class="na">getGlobalContext</span><span class="o">().</span><span class="na">set</span><span class="o">(</span><span class="s">"version"</span><span class="o">,</span> <span class="n">version</span><span class="o">);</span>
+        <span class="n">blade</span><span class="o">.</span><span class="na">templateEngine</span><span class="o">(</span><span class="n">templateEngine</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>这里数据库使用了 <code class="highlighter-rouge">druid</code> 连接池，模板引擎使用 <code class="highlighter-rouge">blade-template-jetbrick</code></p>
+</blockquote>
+
+<p>我们将读取到的 <code class="highlighter-rouge">version</code> 通过模板引擎上下文对象存储进去，在所有模板中使用 <code class="highlighter-rouge">${version}</code> 使用。</p>
+
+<h2 id="配置清单">配置清单</h2>
+
+<h3 id="基础配置">基础配置</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>配置</th>
+      <th>描述</th>
+      <th>默认值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>server.address</td>
+      <td>web服务地址</td>
+      <td>0.0.0.0</td>
+    </tr>
+    <tr>
+      <td>server.port</td>
+      <td>web服务端口</td>
+      <td>9000</td>
+    </tr>
+    <tr>
+      <td>app.devMode</td>
+      <td>是否是开发者模式</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>app.name</td>
+      <td>应用名称</td>
+      <td>blade</td>
+    </tr>
+    <tr>
+      <td>app.thread-name</td>
+      <td>启动线程名</td>
+      <td><em>(:3」∠)</em></td>
+    </tr>
+    <tr>
+      <td>app.banner-path</td>
+      <td>启动banner路径</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>app.context-path</td>
+      <td>应用上下文路径</td>
+      <td>/</td>
+    </tr>
+    <tr>
+      <td>app.task.thread-count</td>
+      <td>任务执行线程</td>
+      <td>当前 CPU 核心数 * 2 + 1</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>开发者模式下异常会输出在网页上，而生产环境应避免</p>
+</blockquote>
+
+<h3 id="mvc-配置">MVC 配置</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>配置</th>
+      <th>描述</th>
+      <th>默认值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mvc.view.404</td>
+      <td>404页面地址</td>
+      <td>无</td>
+    </tr>
+    <tr>
+      <td>mvc.view.500</td>
+      <td>500页面地址</td>
+      <td>无</td>
+    </tr>
+    <tr>
+      <td>mvc.statics</td>
+      <td>静态资源目录，多个用逗号隔开.</td>
+      <td>/static/,/upload/</td>
+    </tr>
+    <tr>
+      <td>mvc.statics.show-list</td>
+      <td>是否显示文件列表，显示后类似于FTP服务</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>mvc.template.path</td>
+      <td>模板文件目录,位于classpath</td>
+      <td>templates</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="http-配置">HTTP 配置</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>配置</th>
+      <th>描述</th>
+      <th>默认值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>http.gzip.enable</td>
+      <td>是否开启gzip压缩</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>http.cors.enable</td>
+      <td>是否开启cors</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>http.session.key</td>
+      <td>session在cookie中的id</td>
+      <td>SESSION</td>
+    </tr>
+    <tr>
+      <td>http.session.timeout</td>
+      <td>session超时时长，单位/秒</td>
+      <td>1800</td>
+    </tr>
+    <tr>
+      <td>http.auth.username</td>
+      <td>basic认证用户名，当开启Basic认证时需要</td>
+      <td>无</td>
+    </tr>
+    <tr>
+      <td>http.auth.password</td>
+      <td>basic认证密码，当开启Basic认证时需要</td>
+      <td>无</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ssl配置">SSL配置</h3>
+
+<p>当你想直接使用 Blade 来搭建一个 <code class="highlighter-rouge">https</code> 的站点时可以用到这个配置，但是笔者不是特别推荐这种做法。
+如果你的服务器只有一个站点你可以这么干，否则还是乖乖使用 <code class="highlighter-rouge">nginx</code> 这样的专业户吧。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>配置</th>
+      <th>描述</th>
+      <th>默认值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>server.ssl.enable</td>
+      <td>是否开启SSL</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>server.ssl.cert-path</td>
+      <td>X.509 certificate chain 文件，如 cert.pem</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>server.ssl.private-key-path</td>
+      <td>私钥路径，如 private.pem</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>server.ssl.private-key-pass</td>
+      <td>私钥密码(如果有的话)</td>
+      <td>NULL</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="最佳实践">最佳实践</h2>
+
+<p>我们通过上面的讲解和示例大概清楚了配置文件是如何玩转的，这里还有一些小技巧需要告诉你。</p>
+
+<ol>
+  <li>参数前缀妙用</li>
+  <li>配置环境区分</li>
+</ol>
+
+<p><strong>参数前缀妙用</strong></p>
+
+<p>我们在前面的例子中可以感受到读取配置文件是一件简单的事情，当参数过多的情况下面我们可以通过不同前缀来标识不同配置场景。
+比如使用 <code class="highlighter-rouge">jdbc</code> 开头表示数据库配置，<code class="highlighter-rouge">mail</code> 开头表示邮件相关配置等等。</p>
+
+<p>在Blade中支持根据前缀获取配置，像前面的示例我们可以修改成这样：</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Environment</span> <span class="n">environment</span> <span class="o">=</span> <span class="n">blade</span><span class="o">.</span><span class="na">environment</span><span class="o">();</span>
+<span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">map</span> <span class="o">=</span> <span class="n">environment</span><span class="o">.</span><span class="na">getPrefix</span><span class="o">(</span><span class="s">"jdbc"</span><span class="o">);</span>
+<span class="k">if</span> <span class="o">(</span><span class="n">map</span><span class="o">.</span><span class="na">containsKey</span><span class="o">(</span><span class="s">"database"</span><span class="o">))</span> <span class="o">{</span>
+    <span class="n">JdbcConfig</span> <span class="n">jdbcConfig</span> <span class="o">=</span> <span class="n">JdbcConfig</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">driver</span><span class="o">(</span><span class="s">"com.mysql.jdbc.Driver"</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">url</span><span class="o">(</span><span class="n">map</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s">"url"</span><span class="o">).</span><span class="na">toString</span><span class="o">())</span>
+            <span class="o">.</span><span class="na">username</span><span class="o">(</span><span class="n">map</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s">"username"</span><span class="o">).</span><span class="na">toString</span><span class="o">())</span>
+            <span class="o">.</span><span class="na">password</span><span class="o">(</span><span class="n">map</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s">"password"</span><span class="o">).</span><span class="na">toString</span><span class="o">())</span>
+            <span class="o">.</span><span class="na">build</span><span class="o">();</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Java语言是一门面向对象的语言，很多时候我们会将数据转为对象进行管理，那么前面以 <code class="highlighter-rouge">jdbc</code> 开头的配置就可以用如上代码表示。
+当配置种类多的时候，编写一个类专门读取配置，用对象进行操作。</p>
+
+<p><strong>配置环境区分</strong></p>
+
+<p>有些时候本地的环境配置和生产是有区别的，比如数据库配置，那么最笨的办法就是上线后修改一下生产环境的配置。
+为了解决这个问题 Blade 用环境配置的方式改善使用，我们认为 <code class="highlighter-rouge">application.properties</code> 是一份默认的配置文件，
+用户可以扩展它，那么在启动的时候你的环境配置会覆盖默认配置。</p>
+
+<p>假设我的生产环境数据库配置和本地不同的，但其他是相同的，那么怎么做呢？</p>
+
+<p><em>保留当前配置创建一份生产环境配置</em></p>
+
+<p>命名为 <code class="highlighter-rouge">application-prod.properties</code>，和 <code class="highlighter-rouge">application.properties</code> 文件处于同目录。</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jdbc.url<span class="o">=</span>jdbc:mysql://10.33.<span class="k">**</span>.44:3328/app
+jdbc.username<span class="o">=</span>username
+jdbc.password<span class="o">=</span>passs<span class="k">**</span>word
+</code></pre></div></div>
+
+<p>只需要这样做就可以了，我们可以看到相同的地方还会使用 <code class="highlighter-rouge">application.properties</code> 文件内容，
+而不同的在新的环境配置中体现，在启动的时候只要加环境参数就可以了。</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-jar</span> app.jar <span class="nt">--app</span>.env<span class="o">=</span>prod
+</code></pre></div></div>
+
+                </p>
+              </div>
+            </article>
+          </div>
+          <!-- <div class="docs-prevnext">
+            <a class="docs-next button" href="why-prettier.html">Why Prettier? →</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script id="twitter-wjs" sync src="https://platform.twitter.com/widgets.js"></script>
+<script type="text/javascript" sync src="https://buttons.github.io/buttons.js"></script>
+
+<footer class="footerSection nav-footer" id="footer">
+    <section class="sitemap">
+        <a href="/" class="nav-home">
+            <img src="/static/icon.png" alt="Blade">
+        </a>
+        <div>
+            <h5>Social Media</h5>
+            <a href="https://twitter.com/PastelPeaks">@PastelPeaks on Twitter</a>
+            <object type="image/svg+xml" data="https://img.shields.io/twitter/follow/PastelPeaks.svg?label=Follow+PastelPeaks&amp;style=social">
+                <a href="https://twitter.com/intent/follow?screen_name=PastelPeaks">
+                    <img alt="Follow us on Twitter" src="https://img.shields.io/twitter/follow/PastelPeaks.png?label=Follow+PastelPeaks&amp;style=social">
+                </a>
+            </object>
+            <a href="https://www.instagram.com/PersonalSpaceGame/">@PersonalSpaceGame on Instagram</a>
+        </div>
+        <div>
+            <img src="https://d1ggkj0laysj3f.cloudfront.net/wp-content/uploads/2018/10/29154938/GamerU-white-e1540850013969.png" 
+            alt="University of Utah Logo"
+            style="width: 25%;float: right;">
+        </div>
+    </section>
+</footer>
+  </div>
+</body>
+
+</html>

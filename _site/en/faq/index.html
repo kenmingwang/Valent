@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang=" zh-CN ">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Personal Space Game</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/static/icon.png">
+    <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5e158f966719b70012374cbf&product=inline-follow-buttons" async="async"></script>
+    <script type="text/javascript">
+        hljs.initHighlightingOnLoad();
+    </script>
+</head>
+
+<body class="sideNavVisible">
+  <div class="fixedHeaderContainer">
+  <div class="headerWrapper wrapper">
+    <header>
+      <a href="/">
+        <img class="logo" src="/static/icon.png">
+        <h2 class="headerTitle">Personal Space</h2>
+      </a>
+      <div class="navigationWrapper navigationSlider">
+        <nav class="slidingNav">
+          <ul class="nav-site nav-site-internal">
+            <li>
+              <a href="" target="">
+                Common Issues
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+</div>
+  <div class="navPusher">
+    <div class="docMainWrapper wrapper">
+      <div class="container docsNavContainer" id="docsNav">
+        <nav class="toc">
+          <div class="toggleNav">
+            <section class="navWrapper wrapper">
+              <div class="navBreadcrumb wrapper">
+                <div class="navToggle" id="navToggler">
+                  <i></i>
+                </div>
+                <h2>
+                  <i>›</i>
+                  <span>FAQ</span>
+                </h2>
+              </div>
+              <div class="navGroups">
+
+                
+
+                
+                <div class="navGroup navGroupActive">
+                  <h3>FAQ</h3>
+                  <ul>
+                    
+                    <li class="navListItem">
+                      <a class="navItem" href="upgrade.html">Upgrade Blade</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                
+              </div>
+            </section>
+          </div>
+          <script>
+            var toggler = document.getElementById('navToggler');
+            var nav = document.getElementById('docsNav');
+            toggler.onclick = function () {
+              nav.classList.toggle('docsSliderActive');
+            };
+          </script>
+        </nav>
+      </div>
+      <div class="container mainContainer">
+        <div class="wrapper">
+          <div class="post">
+            <header class="postHeader">
+              <a class="edit-page-link button" href="https://github.com/lets-blade/lets-blade.github.io/edit/master/en/faq/index.md"
+                target="_blank">
+                Edit Page
+              </a>
+              <h1>FAQ</h1>
+            </header>
+            <article>
+              <div>
+                <p>
+                  <h1 id="how-to-use-the-snapshot-version">How to use the snapshot version?</h1>
+
+<p>Add in the project’s <code class="highlighter-rouge">pom.xml</code> file</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;repositories&gt;</span>
+    <span class="nt">&lt;repository&gt;</span>
+        <span class="nt">&lt;id&gt;</span>snapshots-repo<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;url&gt;</span>https://oss.sonatype.org/content/repositories/snapshots<span class="nt">&lt;/url&gt;</span>
+        <span class="nt">&lt;releases&gt;</span>
+            <span class="nt">&lt;enabled&gt;</span>false<span class="nt">&lt;/enabled&gt;</span>
+        <span class="nt">&lt;/releases&gt;</span>
+        <span class="nt">&lt;snapshots&gt;</span>
+            <span class="nt">&lt;enabled&gt;</span>true<span class="nt">&lt;/enabled&gt;</span>
+        <span class="nt">&lt;/snapshots&gt;</span>
+    <span class="nt">&lt;/repository&gt;</span>
+<span class="nt">&lt;/repositories&gt;</span>
+</code></pre></div></div>
+
+<p>Then use the corresponding snapshot version, such as <code class="highlighter-rouge">2.0.9-SNAPSHOT</code>.</p>
+
+<blockquote>
+  <p>The snapshot version is generally used to fix an emergency bug or to prioritize new features.
+Overwrite each time it is published.</p>
+</blockquote>
+
+<p>The snapshot version can be released indefinitely, which means that the user wants to ensure that the latest version may be forced to update, using</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mvn clean compile <span class="nt">-U</span>
+</code></pre></div></div>
+
+<h1 id="how-to-modify-the-built-in-json-library">How to modify the built-in JSON library?</h1>
+
+<p>By default, Blade has a simple json library built in to handle most situations. If you want to customize or you are used to a json library, Blade supports replacement, and currently supports the following json libraries.</p>
+
+<ul>
+  <li><a href="https://github.com/lets-blade/blade-json-support/tree/master/blade-fastjson-support">fastjson</a></li>
+  <li><a href="https://github.com/lets-blade/blade-json-support/tree/master/blade-jackson-support">jackson</a></li>
+  <li><a href="https://github.com/lets-blade/blade-json-support/tree/master/blade-gson-support">gson</a></li>
+</ul>
+
+<p>If you want to support other libraries, please follow the source extensions yourself.</p>
+
+<p>Add dependencies like <code class="highlighter-rouge">jackson</code></p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dependency&gt;</span>
+    <span class="nt">&lt;groupId&gt;</span>com.bladejava<span class="nt">&lt;/groupId&gt;</span>
+    <span class="nt">&lt;artifactId&gt;</span>blade-jackson-support<span class="nt">&lt;/artifactId&gt;</span>
+    <span class="nt">&lt;version&gt;</span> latest version<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;dependency&gt;</span>
+</code></pre></div></div>
+
+<p>Then add a line before the Blade starts:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">JsonKit</span><span class="o">.</span><span class="na">jsonSupprt</span><span class="o">(</span><span class="k">new</span> <span class="n">FastJsonSupport</span><span class="o">());</span>
+</code></pre></div></div>
+
+                </p>
+              </div>
+            </article>
+          </div>
+          <!-- <div class="docs-prevnext">
+            <a class="docs-next button" href="why-prettier.html">Why Prettier? →</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script id="twitter-wjs" sync src="https://platform.twitter.com/widgets.js"></script>
+<script type="text/javascript" sync src="https://buttons.github.io/buttons.js"></script>
+
+<footer class="footerSection nav-footer" id="footer">
+    <section class="sitemap">
+        <a href="/" class="nav-home">
+            <img src="/static/icon.png" alt="Blade">
+        </a>
+        <div>
+            <h5>Social Media</h5>
+            <a href="https://twitter.com/PastelPeaks">@PastelPeaks on Twitter</a>
+            <object type="image/svg+xml" data="https://img.shields.io/twitter/follow/PastelPeaks.svg?label=Follow+PastelPeaks&amp;style=social">
+                <a href="https://twitter.com/intent/follow?screen_name=PastelPeaks">
+                    <img alt="Follow us on Twitter" src="https://img.shields.io/twitter/follow/PastelPeaks.png?label=Follow+PastelPeaks&amp;style=social">
+                </a>
+            </object>
+            <a href="https://www.instagram.com/PersonalSpaceGame/">@PersonalSpaceGame on Instagram</a>
+        </div>
+        <div>
+            <img src="https://d1ggkj0laysj3f.cloudfront.net/wp-content/uploads/2018/10/29154938/GamerU-white-e1540850013969.png" 
+            alt="University of Utah Logo"
+            style="width: 25%;float: right;">
+        </div>
+    </section>
+</footer>
+  </div>
+</body>
+
+</html>

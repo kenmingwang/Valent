@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang=" zh-CN ">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Personal Space Game</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/static/icon.png">
+    <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5e158f966719b70012374cbf&product=inline-follow-buttons" async="async"></script>
+    <script type="text/javascript">
+        hljs.initHighlightingOnLoad();
+    </script>
+</head>
+
+<body class="sideNavVisible">
+  <div class="fixedHeaderContainer">
+  <div class="headerWrapper wrapper">
+    <header>
+      <a href="/">
+        <img class="logo" src="/static/icon.png">
+        <h2 class="headerTitle">Personal Space</h2>
+      </a>
+      <div class="navigationWrapper navigationSlider">
+        <nav class="slidingNav">
+          <ul class="nav-site nav-site-internal">
+            <li>
+              <a href="" target="">
+                Common Issues
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+</div>
+  <div class="navPusher">
+    <div class="docMainWrapper wrapper">
+      <div class="container docsNavContainer" id="docsNav">
+        <nav class="toc">
+          <div class="toggleNav">
+            <section class="navWrapper wrapper">
+              <div class="navBreadcrumb wrapper">
+                <div class="navToggle" id="navToggler">
+                  <i></i>
+                </div>
+                <h2>
+                  <i>›</i>
+                  <span>升级 Blade</span>
+                </h2>
+              </div>
+              <div class="navGroups">
+
+                
+
+                
+                <div class="navGroup navGroupActive">
+                  <h3>常见问题</h3>
+                  <ul>
+                    
+                    <li class="navListItem navItemActive">
+                      <a class="navItem navItemActive" href="upgrade.html">升级 Blade</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                
+              </div>
+            </section>
+          </div>
+          <script>
+            var toggler = document.getElementById('navToggler');
+            var nav = document.getElementById('docsNav');
+            toggler.onclick = function () {
+              nav.classList.toggle('docsSliderActive');
+            };
+          </script>
+        </nav>
+      </div>
+      <div class="container mainContainer">
+        <div class="wrapper">
+          <div class="post">
+            <header class="postHeader">
+              <a class="edit-page-link button" href="https://github.com/lets-blade/lets-blade.github.io/edit/master/faq/upgrade.md"
+                target="_blank">
+                编辑该页
+              </a>
+              <h1>升级 Blade</h1>
+            </header>
+            <article>
+              <div>
+                <p>
+                  <h2 id="从-208release-版本升级到最新版本">从 <code class="highlighter-rouge">2.0.8.RELEASE</code> 版本升级到最新版本</h2>
+
+<ul>
+  <li><code class="highlighter-rouge">Signature</code> 类已过期，后续使用 <code class="highlighter-rouge">RouteContext</code> 代替该类职责</li>
+  <li><code class="highlighter-rouge">BeanProcessor</code> 接口已过期，后续使用 <code class="highlighter-rouge">BladeLoader</code> 接口代替其职责</li>
+  <li><code class="highlighter-rouge">Blade.me</code> 方法已过期，使用 <code class="highlighter-rouge">Blade.of</code> 代替其职责</li>
+</ul>
+
+<p>需注意之前的 <code class="highlighter-rouge">WebHook</code> 不兼容，需修改 <code class="highlighter-rouge">before</code> 或 <code class="highlighter-rouge">after</code> 方法中的参数类型。
+将 <code class="highlighter-rouge">Signature</code> 修改为 <code class="highlighter-rouge">RouteContext</code>，其他不变。</p>
+
+                </p>
+              </div>
+            </article>
+          </div>
+          <!-- <div class="docs-prevnext">
+            <a class="docs-next button" href="why-prettier.html">Why Prettier? →</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script id="twitter-wjs" sync src="https://platform.twitter.com/widgets.js"></script>
+<script type="text/javascript" sync src="https://buttons.github.io/buttons.js"></script>
+
+<footer class="footerSection nav-footer" id="footer">
+    <section class="sitemap">
+        <a href="/" class="nav-home">
+            <img src="/static/icon.png" alt="Blade">
+        </a>
+        <div>
+            <h5>Social Media</h5>
+            <a href="https://twitter.com/PastelPeaks">@PastelPeaks on Twitter</a>
+            <object type="image/svg+xml" data="https://img.shields.io/twitter/follow/PastelPeaks.svg?label=Follow+PastelPeaks&amp;style=social">
+                <a href="https://twitter.com/intent/follow?screen_name=PastelPeaks">
+                    <img alt="Follow us on Twitter" src="https://img.shields.io/twitter/follow/PastelPeaks.png?label=Follow+PastelPeaks&amp;style=social">
+                </a>
+            </object>
+            <a href="https://www.instagram.com/PersonalSpaceGame/">@PersonalSpaceGame on Instagram</a>
+        </div>
+        <div>
+            <img src="https://d1ggkj0laysj3f.cloudfront.net/wp-content/uploads/2018/10/29154938/GamerU-white-e1540850013969.png" 
+            alt="University of Utah Logo"
+            style="width: 25%;float: right;">
+        </div>
+    </section>
+</footer>
+  </div>
+</body>
+
+</html>
