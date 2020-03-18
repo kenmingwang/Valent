@@ -21,4 +21,3 @@ window.addEventListener("load", function() {
     getStartedSection.classList.remove("getStartedSection--gradle");
   });
 });
-

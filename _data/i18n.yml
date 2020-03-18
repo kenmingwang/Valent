@@ -117,7 +117,8 @@ en:
   upgrade: Upgrade Blade
 
 build: Newest Build Download
-tag_line: A Top-Down Puzzler About Living With Social Anxiety.
+tag_line: A 3rd person empathy game about coping with social anxiety. 
+tag_line2: Navigate social landscapes in this high energy puzzler!
 personalspace-intro: The game is built on Unity3D.
 tool-support: Tool Supports
 unity-engine: Core Engine.
@@ -131,3 +132,51 @@ home_right:
   right01: blah
   right02: blahblah
   right03: blahblahblah
+about_left:
+  left01: Music by Esin Aydingoz
+  left02: Music Production by Adam Traister
+  left03: Sound Design by Francesco Amante
+  left04: Music & Sound by AudioBrew
+about_left:
+  left01: Music by Esin Aydingoz
+  left02: Music Production by Adam Traister
+  left03: Sound Design by Francesco Amante
+  left04: Music & Sound by AudioBrew
+producer:
+  right01: Lead - Ryan Cornellier
+  right02: Morgan Cox
+art:
+  left01: Lead - Luka Redmond
+  left02: Xingyu Hu
+  left03: Aidan Sugrue
+  left04: Yinyu Wang
+design:
+  right01: Lead - Chris Payne
+  right02: McKenna Caldwell
+engineer:
+  left01: Lead - Tristan Bowler
+  left02: Sri Radhakrishnan
+  left03: Ken Wang
+  left04: Alex Wittmann
+
+
+
+
+
+
+# Producers
+# Lead - Ryan Cornellier
+# Morgan Cox
+# Artists
+# Lead - Luka Redmond
+# Xingyu Hu
+# Aidan Sugrue
+# Yinyu Wang
+# Designers
+# Lead - Chris Payne
+# McKenna Caldwell
+# Programmers
+# Lead - Tristan Bowler
+# Sri Radhakrishnan
+# Ken Wang
+# Alex Wittmann

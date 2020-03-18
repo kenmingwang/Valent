@@ -15,29 +15,18 @@
                             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                             <img src="/static/MAN_RUNNING.png" width="10%">
                             <h2 class="projectTitle">
-                                <small
-                                    style="color: coral; -webkit-text-stroke: 0.5px #ffffff;">{{ site.data.i18n.tag_line }}</small>
+                                <small style="color: coral">{{ site.data.i18n.tag_line }}
+                                </small>
+                                <small style="color: coral; margin-top: -35px">{{ site.data.i18n.tag_line2 }}
+                                </small>
                             </h2>
-                            <div class="section promoSection">
+                            <div class="section promoSection" style="margin-top: -50px;">
                                 <div class="promoRow">
                                     <div class="pluginRowBlock">
                                         <div class="pluginWrapper buttonWrapper">
                                             <a class="button" href="" target="_self">
-                                                😄 {{ site.data.i18n.build }} (Windows)
-                                            </a>
-                                            <a class="button" href="" target="_self">
-                                                😂 {{ site.data.i18n.build }} (MacOS)
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="section promoSection">
-                                <div class="promoRow">
-                                    <div class="pluginRowBlock">
-                                        <div class="pluginWrapper buttonWrapper">
-                                            <a class="button" href="" target="_self">
-                                                ❕ Survey Link!!
+                                                <i class="fab fa-steam"></i>
+                                                Steam Early Access
                                             </a>
                                         </div>
                                     </div>
@@ -65,9 +54,9 @@
 
                     </div>
                     <div style="max-width: 43%; text-align: center; margin: 0 auto; padding-top: 20px;">
-                        <h4 style="color: #5f5f52;">
-                            A Brand New Gaming Experience
-                        </h4>
+                        <h3 style="color: coral !important; font-size: 20px !important;;">
+                            The FIRST empathy game produced by a Capstone team within University of Utah EAE program
+                        </h3>
                     </div>
                 </div>
                 <div class="productShowcaseSection">
@@ -80,8 +69,8 @@
                                 box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);" />
                     </div>
                     <div style="max-width: 43%; text-align: center; margin: 0 auto; padding-top: 20px;">
-                        <h4 style="color: #f7f7f1;">
-                            Get in the world of Anxiety!
+                        <h4 style="color: coral !important;font-size: 20px !important;">
+                            Get it now on Steam and the Google Play Store!
                         </h4>
                     </div>
                 </div>
@@ -112,52 +101,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="editorSupportSection productShowcaseSection">
-                    <div class="container">
-                        <div class="wrapper">
-                            <h2>{{ site.data.i18n.tool-support}}</h2>
-                            <div style="display:flex;flex-flow:row wrap;justify-content:space-around;">
-                                <div class="editor">
-                                    <img class="editorImage" src="https://img.icons8.com/ios/100/000000/unity.png">
-                                    <div class="editorInfo">
-                                        <h3 style="margin-bottom:-16px;">Unity3D</h3>
-                                        <div>
-                                            <span>
-                                                <p>
-                                                    <a
-                                                        href="http://subchen.github.io/jetbrick-template/2x/overview.html">
-                                                        <code>{{ site.data.i18n.unity-engine }}</code>
-                                                    </a>
-                                                </p>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="editor">
-                                    <img class="editorImage"
-                                        src="https://img.icons8.com/color/100/000000/autodesk-maya.png">
-                                    <div class="editorInfo">
-                                        <h3 style="margin-bottom:-16px;">AutoDesk Maya</h3>
-                                        <div>
-                                            <span>
-                                                <p>
-                                                    <a href="https://github.com/biezhi/anima">
-                                                        <code>{{ site.data.i18n.maya }}</code>
-                                                    </a>
-                                                </p>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+                <div class="productShowcaseSection">
+                    <div class="margin: 0 auto; text-align: center;">
+
+                        <h1 class="center" style="font-size: 50px !important; color: coral; text-align: center; margin-bottom: 40px;">Latest Tweet</h1>
+                        <a class="twitter-timeline center" href="https://twitter.com/PastelPeaks" data-tweet-limit="1"
+                            data-width="320" data-height="100">123</a>
                     </div>
                     <!-- <div style="float:right;">
                         <span>Got more? </span>
                         <a href="https://github.com/lets-blade/blade/pulls" class="button"> Send a PR </a>
                     </div> -->
                 </div>
-                <div class="getStartedSection productShowcaseSection lightBackground">
+                <!-- <div class="getStartedSection productShowcaseSection lightBackground">
                     <div class="container">
                         <div class="wrapper">
                             <div class="getStartedFlexContainer"
@@ -206,14 +163,69 @@
                             </div>
                         </div>
                     </div>
+                </div> -->
+                <div class="tldrSection productShowcaseSection lightBackground">
+                    <div class="container">
+                        <h1 class="center" style="color: coral; text-align: center; font-size: 50px !important; margin-bottom: 8px !important;">About Us</h1>
+                        <div class="wrapper margin-top" style="margin-top: 30px !important;">
+                            
+                            <div style="display:flex;flex-flow:row wrap;justify-content:space-evenly;">
+                                <div style="display:flex;flex-direction:column;">
+                                    <h2 style="margin-bottom: 0.8em !important;">Music</h2>
+                                    <ul style="flex:1; margin-top: -5px !important;">
+                                        {% for item in site.data.home.left %}
+                                        <li>{{ site.data.i18n.about_left[item] }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                <div style="display:flex;flex-direction:column;">
+                                    <h2 style="margin-bottom: 0.8em !important;">Production</h2>
+                                    <ul style="flex:1;">
+                                        {% for item in site.data.home.right %}
+                                        <li>{{ site.data.i18n.producer[item] }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                <div style="display:flex;flex-direction:column;">
+                                    <h2 style="margin-bottom: 0.8em !important;">Art</h2>
+                                    <ul style="flex:1;">
+                                        {% for item in site.data.home.left %}
+                                        <li>{{ site.data.i18n.art[item] }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                <div style="display:flex;flex-direction:column;">
+                                    <h2 style="margin-bottom: 0.8em !important;">Design</h2>
+                                    <ul style="flex:1;">
+                                        {% for item in site.data.home.right %}
+                                        <li>{{ site.data.i18n.design[item] }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                <div style="display:flex;flex-direction:column;">
+                                    <h2 style="margin-bottom: 0.8em !important;">Engineering</h2>
+                                    <ul style="flex:1;">
+                                        {% for item in site.data.home.left %}
+                                        <li>{{ site.data.i18n.engineer[item] }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         {% include footer.html %}
-    </div>
+
+
 </body>
 
 </html>
+
+
+<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <script>
     function _isMobile() {
